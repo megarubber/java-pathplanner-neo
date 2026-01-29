@@ -46,10 +46,10 @@ public final class Constants {
         }
 
         // ids for the motors
-        public static final int kFrontLeftMotorId = 3;
-        public static final int kFrontRightMotorId = 5;
-        public static final int kBackLeftMotorId = 2;
-        public static final int kBackRightMotorId = 4;
+        public static final int kFrontLeftMotorId = 51;
+        public static final int kFrontRightMotorId = 52;
+        public static final int kBackLeftMotorId = 53;
+        public static final int kBackRightMotorId = 55;
 
         // sets if an motor is inverted
         public static final boolean kLeftMotorsInverted = false;
@@ -59,7 +59,7 @@ public final class Constants {
         public static final IdleMode kMotorIdleMode = IdleMode.kBrake;
 
         // smartLimit
-        public static final int kSmartCurrentLimit = 30;
+        public static final int kSmartCurrentLimit = 40;
 
         public static final double kMaxSpeedMetersPerSecond = 5.6;
         public static final double kMaxAccelerationMetersPerSecondSquared = 5.6;
@@ -71,12 +71,12 @@ public final class Constants {
         public static final double kVelocityFF = 1 / 473;
 
         // physical constants
-        public static final double kWheelRadius = Units.inchesToMeters(3);
+        public static final double kWheelRadius = Units.inchesToMeters(6);
         public static final double kWheelDiameter = 2 * kWheelRadius;
         public static final double kWheelCircumference = kWheelDiameter * Math.PI;
-        public static final double kGearReduction = 8.45865;
+        public static final double kGearReduction = 10.7;
 
-        public static final double kTrackWidth = 0.5;
+        public static final double kTrackWidth = 0.655;
 
         // encoder conversion factors
         public static final double kRotationsToMeters = kWheelCircumference / kGearReduction;
